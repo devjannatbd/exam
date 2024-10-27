@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Exam Project</title>
+</head>
+
+<body>
+  <header class=" bg-black h-[50px]">
+    <ul class="list-none text-white font-semibold flex gap-6  justify-center pt-3">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </header>
+  <main class=" bg-black text-white grid grid-cols-3 ">
+    <div class=" text-center mt-60 col-span-2 ">
+      <h3 class=" text-yellow-500">World Most Valuable Players </h3>
+      <p class="">These are the most demandabke football player in the world.These value has so much
+        high. if you want to hier <br> them,You have to pay big ammount of money for
+    </div>
+    <div class="">
+      <img class="" src="./pic/neymar.png" alt="">
+    </div>
+  </main>
+  <!-- Card section -->
+  <section class=" my-10 flex ">
+    <div class="grid grid-cols-3 gap-5 mx-10">
+      <div class="border-2 rounded-xl">
+        <img src="./pic/messi.jpg" alt="">
+        <h3 class="mx-2 my-2 font-bold" id="title"> Lionel Messi </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button">Select</button>
+          <!---->
+        </div>
+      </div>
+      <div class="border-2 rounded-xl">
+        <img src="./pic/andres.jpg" alt="">
+        <h3 class="mx-2 my-2 font-bold" id="andres"> Andres </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button1">Select</button>
+        </div>
+      </div>
+      <div class="border-2 rounded-xl">
+        <img class="" src="./pic/mbpappe.jpeg" alt="">
+        <h3 class="mx-2 my-2 font-bold" id="Mbappe">Mbappe </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button2">Select</button>
+        </div>
+      </div>
+      <div class="border-2 rounded-xl">
+        <img class="" src="./pic/mene.jpg" alt="">
+        <h3 class="mx-2 my-2 font-bold" id="sadio"> Sadio Mene </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button3">Select</button>
+        </div>
+      </div>
+      <div class="border-2 rounded-xl">
+        <img class="" src="./pic/eden.jpg" alt="">
+        <h3 class="mx-2 my-2 font-bold" id="Hazard"> Eden Hazard </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button4">Select</button>
+        </div>
+      </div>
+      <div class="border-2 rounded-xl">
+        <img class="" src="./pic/pogba.jpg" alt="">
+        <h3 class="mx-2 my-2 font-bold">Paul Pogba </h3>
+        <p class="mx-2">36 Goals. 120 Assist</p>
+        <div class="flex justify-center py-2">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+            id="button5">Select</button>
+        </div>
+      </div>
+    </div>
+    <!-- Selection Part -->
+    <div class="text-white grid col-span-1">
+      <div class="border-2 rounded-xl bg-black ">
+        <h3 class="mx-2 my-2 font-bold text-center" id="pragraph">Selected-V </h3>
+        <ol class="orderlist text-center" id="orderlist" type="1"></ol>
+      </div>
+      <!-- Bydget Part -->
+      <div class="border-2 rounded-xl bg-black flex justify-center mt-96">
+        <div class=" mx-2 px-10">
+          <h3 class="mx-2 my-2 font-bold mb-5 text-center">Player Budget </h3>
+          <div class="flex gap-2 ">
+            <lable for="playerCost">Per Player</lable>
+            <input class=" text-black w-[120px]" type="number" name="" id="playerCost" placeholder="Player cost">
+          </div>
+          <div>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 my-6 px-10 border border-blue-700 rounded"
+              id="playCostBtn">Calculate</button>
+          </div>
+          <h3 for="">Player Expenses<span class="mx-5">$ <span id="pExpenCost"> 00</span></span></h3>
+          <div class="flex gap-4 my-4 ">
+            <label for="managerCost">Manager</label>
+            <input class=" text-black w-[120px]" type="number" name="" id="managercost" placeholder="Manager cost">
+          </div>
+          <div class="flex gap-4 my-6">
+            <label for="">Coach</label>
+            <input class=" text-black w-[120px]" type="number" name="" id="coachcost" placeholder="Coach cost">
+          </div>
+          <div class="">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 border border-blue-700 rounded"
+              id="calculatbtn">Calculate Total</button>
+          </div>
+          <p class="font-bold my-5">ToTal<span class="mx-16 text-yellow-500">$<span id="total">00</span></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
